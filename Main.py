@@ -16,7 +16,8 @@ class Stack:
   def pop(self) -> None:
       if self.head is None:
           print("Stack is empty")
-      self.head = self.head.next
+      else:
+          self.head = self.head.next
 
   def status(self):
     ptr = self.head
